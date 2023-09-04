@@ -1,0 +1,129 @@
+:root {
+    --primary-dark-cyan: hsl(158, 36%, 37%);
+    --primary-cream: hsl(30, 38%, 92%);
+    --neutral-dark-blue: hsl(212, 21%, 14%);
+    --neutral-dark-grayish: hsl(228, 12%, 48%);
+    --font-weight-regular: 500;
+    --font-weight-bold: 700;
+}
+
+body{
+    font-size: 14px;
+    height: 100vh;
+    margin: 0px;
+    background: var(--primary-cream);
+    box-sizing:border-box;
+    font-family: "Montserrat", "sans-serif";
+    color: var(--neutral-dark-grayish);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    margin: 10px;
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+}
+
+.main-img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container > :last-child {
+    margin: 10px 30px 20px 20px;
+}
+
+.category {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--neutral-dark-grayish);
+    font-weight: var(--font-weight-regular);
+    letter-spacing: 4px;
+}
+
+.header {
+    color: hsl(0,0%,20%);
+    font-family: "Fraunces", "sans-serif";
+    font-weight: var(--font-weight-bold);
+    font-size: 32px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.content {
+    font-weight: var(--font-weight-regular);
+    color: var(--neutral-dark-grayish);
+    font-size: 14px;
+    line-height: 24px
+}
+
+.money {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.discount {
+    font-size: 32px;
+    font-weight: var(--font-weight-bold);
+    font-family: "Fraunces", "sans-serif";
+    color: var(--primary-dark-cyan);
+    margin: 0px 20px 0px 0px;
+}
+
+.price {
+    font-weight: var(--font-weight-regular);
+    text-decoration: line-through;
+}
+
+.addToCart {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-dark-cyan);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: var(--font-weight-bold);
+}
+
+.addToCart:hover{
+    background:  hsl(158, 36%, 17%);;
+}
+
+.addToCart > :first-child {
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        flex-direction: row;
+        width: 550px;
+        height: 400px;
+    }
+
+    .main-img {
+        border-radius: 10px 0px 0px 10px;
+        width: auto;
+    }
+
+    .container > :last-child {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
