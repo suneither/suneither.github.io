@@ -10,6 +10,7 @@
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font: inherit;
@@ -32,6 +33,9 @@ body{
     background: var(--pale-blue);
     text-align: center;
     font-family: 'Red Hat Display', 'sans-serif';
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .component {
@@ -48,19 +52,89 @@ body{
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 10px 0px 10px 0px;
-    gap: 20px;
+    gap: 25px;
 }
 
 .header {
-    font-weight: var(--weight-big);
     font-size: 22px;
     color: var(--dark-blue);
 }
 
 .text {
-    margin: 0px 10px 0px 10px;
     color: var(--desaturated-blue);
     font-weight: var(--weight-small);
+    line-height: 25px;
+    padding: 0px 15px;
 }
+
+.plan {
+    display:flex;
+    background: var(--very-pale-blue);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.plan-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.big-weight {
+    font-weight: var(--weight-big);
+}
+
+.plan-cost {
+    color: var(--desaturated-blue);
+}
+
+.plan-link {
+    font-size: 14px;
+    color: var(--bright-blue);
+}
+/* change this with var(--vsfjjf) */
+.plan-link:hover {
+    color: hsl(245, 75%, 52%, 60%);
+}
+
+.medium-weight {
+    font-weight: var(--weight-medium);
+}
+
+.proceed-button {
+    color: white;
+    text-decoration: none;
+    background: var(--bright-blue);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 20px 20px hsl(245, 75%, 90%);;
+}
+
+.proceed-button:hover {
+    background: hsl(245, 75%, 52%, 60%);
+}
+
+.cancel-button {
+    color: var(--desaturated-blue);
+    text-decoration: none;
+}
+
+.cancel-button:hover {
+    color: black;
+}
+
+@media screen and (min-width: 500px) {
+
+    .content {
+        padding: 40px;
+    }
+
+    .text {
+        padding: 0px;
+    }
+}
+
+
